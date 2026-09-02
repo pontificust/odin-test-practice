@@ -10,7 +10,7 @@ export class Calculator {
         return Math.round((a + b) * 100) / 100;
     };
 
-    static substract(a, b) {
+    static subtract(a, b) {
         this.checkType(a, b);
         return Math.round((a - b) * 100) / 100;
     };

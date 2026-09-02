@@ -17,12 +17,12 @@ test('multiply() retruns a correct multiplication of input integers', () => {
     expect(Calculator.multiply(1902, 3)).toEqual(5706);
 });
 
-test('substract() retruns a corrrect subtraction of input integers', () => {
-    expect(Calculator.substract(1, 2)).toEqual(-1);
+test('subtract() retruns a corrrect subtraction of input integers', () => {
+    expect(Calculator.subtract(1, 2)).toEqual(-1);
 });
 
-test('substract() retruns a correct subtraction of input integers', () => {
-    expect(Calculator.substract(5000, 1999)).toEqual(3001);
+test('subtract() retruns a correct subtraction of input integers', () => {
+    expect(Calculator.subtract(5000, 1999)).toEqual(3001);
 });
 
 test('add() returns a correct addition of two floats', () => {
@@ -41,12 +41,12 @@ test('multiply() retruns a correct multiplication of input floats', () => {
     expect(Calculator.multiply(1902.99, 3.99)).toEqual(7592.93);
 });
 
-test('substract() retruns a correct subtraction of input floats', () => {
-    expect(Calculator.substract(1.22, 2.99)).toEqual(-1.77);
+test('subtract() retruns a correct subtraction of input floats', () => {
+    expect(Calculator.subtract(1.22, 2.99)).toEqual(-1.77);
 });
 
-test('substract() retruns a correct subtraction of input floats', () => {
-    expect(Calculator.substract(5000.9324, 1999.343224)).toEqual(3001.59);
+test('subtract() retruns a correct subtraction of input floats', () => {
+    expect(Calculator.subtract(5000.9324, 1999.343224)).toEqual(3001.59);
 });
 
 test('divide() retruns a correct division of input integers(exact division)', () => {
@@ -93,6 +93,6 @@ test('divide() throws a type Error on input that is not numeric', () => {
     expect(() => Calculator.divide('a', 'b')).toThrow('wrong type, please input a numeric value');
 });
 
-test('substract() throws a type Error on input that is not numeric', () => {
-    expect(() => Calculator.substract(1, 'dfa')).toThrow('wrong type, please input a numeric value');
+test('subtract() throws a type Error on input that is not numeric', () => {
+    expect(() => Calculator.subtract(1, 'dfa')).toThrow('wrong type, please input a numeric value');
 });
