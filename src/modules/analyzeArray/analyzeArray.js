@@ -1,13 +1,13 @@
 export const analyzeArray = (arr) => {
-    if(!Array.isArray(arr) || arr.length === 0) {
-        throw new Error('wrong type, please input an array of numeric values');
-    }
+  if (!Array.isArray(arr) || arr.length === 0) {
+    throw new Error("wrong type, please input an array of numeric values");
+  }
 
-    arr.forEach(val => {
-        if(!Number.isFinite(val)) {
-            throw new Error('wrong type, please input an array of numeric values');
-        }
-    });
+  arr.forEach((val) => {
+    if (!Number.isFinite(val)) {
+      throw new Error("wrong type, please input an array of numeric values");
+    }
+  });
 
   return {
     average:
