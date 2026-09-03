@@ -25,3 +25,15 @@ test('negative shift', () => {
 test('shift is bigger than 26', () => {
     expect(caesarCipher('hello', 55)).toEqual('khoor');
 });
+
+test('wrong input type', () => {
+    expect(() => caesarCipher(null, 'hello')).toThrow('wrong input type');
+});
+
+test('empty input', () => {
+    expect(() => caesarCipher()).toThrow('wrong input type');
+});
+
+test('empty string', () => {
+    expect(caesarCipher('', 5)).toEqual('');
+});

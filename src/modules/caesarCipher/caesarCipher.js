@@ -1,4 +1,9 @@
 export const caesarCipher = (str, shiftFactor) => {
+
+  if(typeof str !== 'string' || !Number.isFinite(shiftFactor)){
+    throw new Error('wrong input type');
+  }
+
   let encryptedStr = "";
   
   const isUpperCase = (charCode) => {
